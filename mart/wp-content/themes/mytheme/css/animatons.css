@@ -1,0 +1,109 @@
+
+/* Infinite bounce */
+
+.cube{
+      width: 250px;
+      height: 250px;
+      background-color: red;
+      animation-name: bounce;
+      animation-duration: 0.5s;
+      animation-timing-function: cubic-bezier(.01,.48,.61,1);
+      animation-delay: 0;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+      animation-fill-mode: none;
+      animation-play-state: running;
+}
+@keyframes bounce{
+      0%{
+            transform: translateY(50px)
+      }
+      100%{
+            transform: translateY(0px);
+      }
+}
+
+/* Image/background fade in */
+
+.animate-backgrond{
+      animation: background-fade 2s ease-out forwards;
+      opacity: 0;
+  }
+@keyframes background-fade{
+      0%{
+          opacity: 0;
+          transform: translateY(-4rem)
+      }
+      100%{
+          opacity: 1;
+          transform: none;
+      }
+  }
+
+  /* Logo Pop-in */
+
+  .animate-pop-in{
+      animation: pop-in 1.5s cubic-bezier(0,.58,.35,1) forwards;
+      animation-delay: 0.4s;
+      opacity: 0;
+  }
+  
+  @keyframes pop-in{
+      0%{
+          opacity: 0;
+          transform: translateY(-4rem) scale(.8);
+      }
+      100%{
+          opacity: 1;
+          transform: none;
+      }
+  }
+  
+  /* Loading animation */
+  .load{
+      position:absolute;
+      top: 50%;
+      left:50%;
+      transform:translate(-50%, -50%);
+      /*Groote van de cirkels*/
+      width:200px;
+      height:200px;
+    }
+    .load hr{
+      border:0;
+      margin:0;
+      width:40%;
+      height:40%;
+      position:absolute;
+      border-radius:50%;
+      animation:spin 2s ease infinite}
+    
+    .load :first-child{background:#19A68C;animation-delay:-1.5s}
+    .load :nth-child(2){background:#F63D3A;animation-delay:-1s}
+    .load :nth-child(3){background:#FDA543;animation-delay:-0.5s}
+    .load :nth-child(3){background:#FDA543;animation-delay:-0.5s}
+    .load :last-child{background:#193B48}
+    
+    @keyframes spin{
+      0%,100%{transform:translate(0)}
+      25%{transform:translate(160%)}
+      50%{transform:translate(160%, 160%)}
+      75%{transform:translate(0, 160%)}
+    }
+
+    /* Text fade in */
+    .explain-text{
+      animation-name: text-fade;
+      animation-duration: .8s;
+      animation-fill-mode: both;
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    @keyframes text-fade{
+          0%, 100%{
+            transform: translateY(0);
+          }
+          50%{
+            transform: translateY(-5px);
+          }
+          
+    }
