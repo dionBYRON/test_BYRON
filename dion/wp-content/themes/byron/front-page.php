@@ -12,11 +12,7 @@ if (have_posts()) {
                             <div class="home-about">
                                 <h1 class="h1-intro"><i class="fas fa-code"></i>Developer</h1>
                                 <p class="home-intro-tekst">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Fusce elit neque, placerat a fermentum non, malesuada in arcu.
-                                    Cras a lacus iaculis, malesuada metus ut, sollicitudin ante.
-                                    Mauris lobortis augue risus, sed ultricies dolor auctor at.
-                                    Donec eget nisl justo.
+                                
                                 </p>
                                 <a class="button" href="#"><button>Lorem ipsum.</button></a>
                             </div>
